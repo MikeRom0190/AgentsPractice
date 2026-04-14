@@ -1,12 +1,7 @@
 name: Publish
 
 on:
-  push:
-    branches:
-      - 'master'
-      - 'staging'
-    tags:
-      - '*.*.*'
+  workflow_dispatch:
 
 jobs:
   docker:
